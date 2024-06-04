@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import ProductTable from './components/ProductTable'
 import ProductForm from './components/ProductForm'
+import NavBar from './routes/NavBar'
+import { Outlet } from 'react-router-dom';
 
 // CRUD COM JSON SERVER
 
@@ -114,6 +116,8 @@ function App() {
       </div>
 
       <ProductForm name={name} price={price} stock={stock} handleName={handleName} handlePrice={handlePrice} handleStock={handleStock} saveProduct={saveProduct}/>
+      <NavBar/>
+      <Outlet/>
     </>
   )
 }
