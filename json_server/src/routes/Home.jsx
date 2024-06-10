@@ -1,5 +1,5 @@
 export default function Home(){
     return(
-        <h2>Teu cu</h2>
+        <h2>Login</h2>
     )
 }
