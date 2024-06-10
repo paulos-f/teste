@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "name": "Uva",
-      "price": "15",
+      "name": "Maça",
+      "price": "20",
       "stock": "30",
       "id": "630f"
     },

@@ -114,10 +114,11 @@ function App() {
           products.length > 0 ? <ProductTable products={products} deleteProduct={deleteProduct} editProduct={getProductById} /> : <h3 style={{marginBottom: '30px'}}>Nenhum produto cadastrado...</h3>
         }
       </div>
-
+      
       <ProductForm name={name} price={price} stock={stock} handleName={handleName} handlePrice={handlePrice} handleStock={handleStock} saveProduct={saveProduct}/>
       <NavBar/>
       <Outlet/>
+
     </>
   )
 }
