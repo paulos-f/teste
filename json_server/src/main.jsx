@@ -8,6 +8,7 @@ import Home from './routes/Home.jsx'
 
 
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
+      },
+      {
+        path: '/login',
+        element: <Home/>
       }
     ]
   },
@@ -24,7 +29,6 @@ const router = createBrowserRouter([
     path: '/*',
     element: <Teste/>
   }
-  
 ])
 
 function Teste() {

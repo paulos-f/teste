@@ -1,5 +1,10 @@
+import TelaLogin from "../components/TelaLogin"
+
 export default function Home(){
     return(
-        <h2>Login</h2>
+        <>
+            <h2>Bem vindo!!!</h2>
+            <TelaLogin/>
+        </>
     )
 }
