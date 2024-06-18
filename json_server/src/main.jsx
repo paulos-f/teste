@@ -5,6 +5,8 @@ import './index.css'
 import {createBrowserRouter, RouterProvider } from "react-router-dom"
 import ErrorPage from './routes/ErrorPage.jsx'
 import Home from './routes/Home.jsx'
+import TelaLoginCadastro from './components/TelaLoginCadastro.jsx'
+import TelaInicial from './components/TelaInicial.jsx'
 
 
 
@@ -17,11 +19,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home/>
+        element: <TelaInicial/>
       },
       {
         path: '/login',
         element: <Home/>
+      }, 
+      {
+        path: '/cadastro',
+        element: <TelaLoginCadastro/>
       }
     ]
   },
