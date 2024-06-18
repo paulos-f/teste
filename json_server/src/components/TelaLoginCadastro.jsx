@@ -22,8 +22,6 @@ function TelaLoginCadastro() {
     
     
 
-
-
     return (
         <div className='register-container'>
             <form className='register-form' onSubmit={handleSumbit}>
