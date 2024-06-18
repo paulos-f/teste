@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+
+
 function TelaLogin() {
     const  [email, setEmail] = useState('');
     const  [password, setPassword] = useState('');
@@ -8,6 +10,8 @@ function TelaLogin() {
         Event.preventDefault();
         console.log('Email: ', email, 'Senha: ', password) 
     }
+
+
 
     return (
         <div className="login-container">
@@ -23,6 +27,9 @@ function TelaLogin() {
                     <input type="password" id='password' value={password} onChange={(e) => setPassword(e.target.value)} required/>
                 </div>
                 <button type='sumbit' className='login-button'>Entrar</button>
+            </form>
+            <form action="cadastro">
+                <button type='sumbit' className='login-button'>Cadastrar</button>
             </form>
         </div>
     )

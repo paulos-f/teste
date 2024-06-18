@@ -17,6 +17,20 @@
       "price": "55",
       "stock": "30",
       "id": "2078"
+    },
+    {
+      "name": "paozinho",
+      "price": "1",
+      "stock": "10",
+      "id": "f8aa"
+    }
+  ],
+  "users": [
+    {
+      "username": "paulo",
+      "email": "paulo@g",
+      "password": "1234",
+      "confirm-password": "1234"
     }
   ]
 }
