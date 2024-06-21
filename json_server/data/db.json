@@ -5,6 +5,18 @@
       "price": "3",
       "stock": "5",
       "id": "ad65"
+    },
+    {
+      "name": "maçaneta",
+      "price": "3",
+      "stock": "10",
+      "id": "6a5e"
+    },
+    {
+      "id": "5581",
+      "name": "hjb",
+      "price": "0",
+      "stock": "0"
     }
   ],
   "users": [
@@ -49,6 +61,12 @@
       "username": "joao",
       "email": "joaocepac@gmail.com",
       "password": "fafa"
+    },
+    {
+      "id": "5239",
+      "username": "po",
+      "email": "as@as",
+      "password": "3"
     }
   ]
 }

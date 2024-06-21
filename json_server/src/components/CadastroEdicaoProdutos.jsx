@@ -13,7 +13,6 @@ export default function ProductFormPage() {
     const url = 'http://localhost:3000/products';
 
     useEffect(() => {
-        // Se houver um produto no estado da localização, estamos em modo de edição
         if (location.state?.product) {
             const { product } = location.state;
             setName(product.name);
