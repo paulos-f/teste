@@ -8,15 +8,15 @@
     },
     {
       "name": "maçaneta",
-      "price": "3",
+      "price": "30",
       "stock": "10",
       "id": "6a5e"
     },
     {
-      "id": "5581",
-      "name": "hjb",
-      "price": "0",
-      "stock": "0"
+      "id": "ba45",
+      "name": "banana",
+      "price": "2.99",
+      "stock": "20"
     }
   ],
   "users": [
@@ -67,6 +67,12 @@
       "username": "po",
       "email": "as@as",
       "password": "3"
+    },
+    {
+      "id": "dab6",
+      "username": "o",
+      "email": "re@233",
+      "password": "1234"
     }
   ]
 }
