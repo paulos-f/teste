@@ -28,6 +28,7 @@ function TelaLogin() {
                 setEmail('');
                 setPassword('');
                 setLoginError(false);
+                
             } else {
                 setLoginError(true)
                 alert('Dados inseridos incorretamente');

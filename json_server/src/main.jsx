@@ -7,6 +7,7 @@ import ErrorPage from './routes/ErrorPage.jsx'
 import Home from './routes/Home.jsx'
 import TelaLoginCadastro from './components/TelaLoginCadastro.jsx'
 import TelaInicial from './components/TelaInicial.jsx'
+import CadastroProdutos from './components/CadastroProdutos.jsx'
 
 
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/cadastro',
         element: <TelaLoginCadastro/>
+      },
+      {
+        path: '/cadastro-produto',
+        element: <CadastroProdutos/>
       }
     ]
   },
