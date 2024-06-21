@@ -1,28 +1,10 @@
 {
   "products": [
     {
-      "name": "Maça",
-      "price": "20",
-      "stock": "30",
-      "id": "630f"
-    },
-    {
-      "name": "paulo",
-      "price": "12",
-      "stock": "70",
-      "id": "32d4"
-    },
-    {
-      "name": "teste",
-      "price": "55",
-      "stock": "30",
-      "id": "2078"
-    },
-    {
-      "name": "paozinho",
-      "price": "1",
-      "stock": "10",
-      "id": "f8aa"
+      "name": "maça",
+      "price": "3",
+      "stock": "5",
+      "id": "ad65"
     }
   ],
   "users": [
@@ -49,6 +31,24 @@
       "username": "33",
       "email": "3@3",
       "password": "1234"
+    },
+    {
+      "id": "60f7",
+      "username": "peidinho jamiraguaia",
+      "email": "pedro@peidao",
+      "password": "gatotrovao"
+    },
+    {
+      "id": "efc3",
+      "username": "11",
+      "email": "1@1",
+      "password": "1"
+    },
+    {
+      "id": "1e57",
+      "username": "joao",
+      "email": "joaocepac@gmail.com",
+      "password": "fafa"
     }
   ]
 }

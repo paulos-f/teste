@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function TelaLogin() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loginError, setLoginError] = useState(false);
+    const navigate = useNavigate()
 
     const fetchUsers = async () => {
         const response = await fetch('http://localhost:3000/users');
@@ -28,6 +30,7 @@ function TelaLogin() {
                 setEmail('');
                 setPassword('');
                 setLoginError(false);
+                navigate('/cadastro-produto')
                 
             } else {
                 setLoginError(true)
