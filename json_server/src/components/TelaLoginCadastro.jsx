@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 
 function TelaLoginCadastro() {
 
@@ -9,19 +9,39 @@ function TelaLoginCadastro() {
 
     const url = 'http://localhost:3000/users'
 
-    const handleSumbit = (event) => {
+    const handleSumbit = async(event) => {
         event.preventDefault()
-
         if (password !== confirmpassword) {
             alert('As senhas estão diferentes, tente novamente com mais atenção.')
             return;
         }
-        
+        const user = { username, email, password };
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(user),
+            });
+
+            if (response.ok) {
+                alert('Usuário cadastrado com sucesso!');
+                setUsername('');
+                setEmail('');
+                setPassword('');
+                setCondirmpassword('');
+            } else {
+                alert('Erro ao cadastrar usuário.');
+            }
+        } catch (error) {
+            alert('Erro ao enviar dados: ' + error.message);
+        }
+
         console.log('Nome do usuario', username, 'Email: ', email, 'Senha', password)
     }
     
-    
-
     return (
         <div className='register-container'>
             <form className='register-form' onSubmit={handleSumbit}>
@@ -47,5 +67,6 @@ function TelaLoginCadastro() {
         </div>
     )
 }
+
 
 export default TelaLoginCadastro
