@@ -14,7 +14,7 @@ export default function ProductFormPage() {
     const navigate = useNavigate();
     const url = 'http://localhost:3000/products';
 
-    // Efeito para verificar se está editando um produto existente
+    // feito para verificar se está editando um produto existente
     // useEffect ta sendo usado para carregar dados de um produto quando a página é carregada ou quando location.state muda.
     useEffect(() => {
         if (location.state?.product) {
