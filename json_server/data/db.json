@@ -19,10 +19,16 @@
       "stock": "80"
     },
     {
-      "id": "b9ea",
       "name": "maçaneta",
       "price": "4",
-      "stock": "3"
+      "stock": "3",
+      "id": "b9ea"
+    },
+    {
+      "name": "teste",
+      "price": "1",
+      "stock": "1",
+      "id": "ffb8"
     }
   ],
   "users": [

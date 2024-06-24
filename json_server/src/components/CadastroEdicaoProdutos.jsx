@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ProductForm from './ProductForm';
+import './CadastroProdutosCSS.css'
 
 export default function ProductFormPage() {
     // Definindo os estados para o formulário de produto
@@ -73,7 +74,7 @@ export default function ProductFormPage() {
                 handleStock={handleStock}
                 saveProduct={saveProduct}
             />
-            <button onClick={() => navigate('/cadastro-produto')}>Voltar</button>
+            <button onClick={() => navigate('/cadastro-produto')} className='l-button'>Voltar</button>
         </div>
     );
 }
