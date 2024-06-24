@@ -1,0 +1,13 @@
+.l-button {
+    width: 10%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.l-button:hover {
+    background-color: green;
+}
