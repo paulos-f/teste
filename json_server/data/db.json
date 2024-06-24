@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "name": "maça",
-      "price": "33",
-      "stock": "5",
-      "id": "ad65"
-    },
-    {
       "name": "Rodrigo Cesar Nunes Maciel",
       "price": "12",
       "stock": "80",
@@ -17,18 +11,6 @@
       "name": "César Cataldo Scharlau",
       "price": "12",
       "stock": "80"
-    },
-    {
-      "name": "maçaneta",
-      "price": "4",
-      "stock": "3",
-      "id": "b9ea"
-    },
-    {
-      "name": "teste",
-      "price": "1",
-      "stock": "1",
-      "id": "ffb8"
     }
   ],
   "users": [
@@ -36,6 +18,12 @@
       "id": "52f0",
       "username": "p",
       "email": "paulo@g",
+      "password": "1234"
+    },
+    {
+      "id": "66e7",
+      "username": "paulo",
+      "email": "p@e",
       "password": "1234"
     }
   ]
