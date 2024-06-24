@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProductTable from './ProductTable';
-
+import './CadastroProdutosCSS.css'
 
 export default function ProductListPage() {
     const [products, setProducts] = useState([]);
@@ -41,8 +41,8 @@ export default function ProductListPage() {
 
     const NovoProduto = () => {
       // Navega para a página de cadastro sem dados (novo produto)
-      navigate('/forma-produto');
-  }
+    navigate('/forma-produto');
+    }
 
 
     return (
@@ -53,7 +53,7 @@ export default function ProductListPage() {
             ) : (
                 <h3 style={{ marginBottom: '30px' }}>Nenhum produto cadastrado...</h3>
             )}
-            <button onClick={NovoProduto}>Novo produto</button>
+            <button onClick={NovoProduto} className='l-button'>Novo produto</button>
         </div>
     );
 }

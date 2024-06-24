@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './TelaLoginCadastroCSS.css';
 
 function TelaLoginCadastro() {
 
@@ -6,8 +8,8 @@ function TelaLoginCadastro() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmpassword, setCondirmpassword] = useState('');
-
     const url = 'http://localhost:3000/users'
+    const navigate = useNavigate()
 
     const handleSumbit = async(event) => {
         event.preventDefault()
@@ -25,13 +27,14 @@ function TelaLoginCadastro() {
                 },
                 body: JSON.stringify(user),
             });
-
+            
             if (response.ok) {
                 alert('Usuário cadastrado com sucesso!');
                 setUsername('');
                 setEmail('');
                 setPassword('');
                 setCondirmpassword('');
+                navigate('/login')
             } else {
                 alert('Erro ao cadastrar usuário.');
             }
@@ -59,7 +62,7 @@ function TelaLoginCadastro() {
                     <input type="password" id='password' value={password} onChange={(e) => setPassword(e.target.value)} required />
                 </div>
                 <div className='input-group'>
-                    <label htmlFor="password">Confirme a senha</label>
+                    <label htmlFor="confirm-password">Confirme a senha</label>
                     <input type="password" id='confirm-password' value={confirmpassword} onChange={(e) => setCondirmpassword(e.target.value)} required />
                 </div>
                 <button type='submit' className='register-button'>Cadastrar</button>
@@ -68,5 +71,4 @@ function TelaLoginCadastro() {
     )
 }
 
-
-export default TelaLoginCadastro
+export default TelaLoginCadastro;

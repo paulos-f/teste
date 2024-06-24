@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import ProductForm from './ProductForm';
 
 export default function ProductFormPage() {
+    // Definindo os estados para o formulário de produto
     const [name, setName] = useState("");
     const [price, setPrice] = useState("");
     const [stock, setStock] = useState("");
@@ -12,6 +13,8 @@ export default function ProductFormPage() {
     const navigate = useNavigate();
     const url = 'http://localhost:3000/products';
 
+    // Efeito para verificar se está editando um produto existente
+    // useEffect ta sendo usado para carregar dados de um produto quando a página é carregada ou quando location.state muda.
     useEffect(() => {
         if (location.state?.product) {
             const { product } = location.state;
@@ -23,6 +26,7 @@ export default function ProductFormPage() {
         }
     }, [location.state]);
 
+    // Função para limpar o formulário
     const clearForm = () => {
         setName("");
         setPrice("");
@@ -31,6 +35,7 @@ export default function ProductFormPage() {
         setEdit(false);
     }
 
+    // Função para salvar o produto (criar ou atualizar)
     const saveProduct = async (e) => {
         e.preventDefault();
         const saveRequestParams = {

@@ -2,21 +2,27 @@
   "products": [
     {
       "name": "maça",
-      "price": "3",
+      "price": "33",
       "stock": "5",
       "id": "ad65"
     },
     {
-      "name": "maçaneta",
-      "price": "30",
-      "stock": "10",
-      "id": "6a5e"
+      "name": "Rodrigo Cesar Nunes Maciel",
+      "price": "12",
+      "stock": "80",
+      "id": "e63e"
     },
     {
-      "id": "ba45",
-      "name": "banana",
-      "price": "2.99",
-      "stock": "20"
+      "id": "a990",
+      "name": "César Cataldo Scharlau",
+      "price": "12",
+      "stock": "80"
+    },
+    {
+      "id": "b9ea",
+      "name": "maçaneta",
+      "price": "4",
+      "stock": "3"
     }
   ],
   "users": [
@@ -24,54 +30,6 @@
       "id": "52f0",
       "username": "p",
       "email": "paulo@g",
-      "password": "1234"
-    },
-    {
-      "id": "30dc",
-      "username": "r",
-      "email": "paulo@gm",
-      "password": "1234"
-    },
-    {
-      "id": "2030",
-      "username": "o",
-      "email": "paulo@g44",
-      "password": "1234"
-    },
-    {
-      "id": "6716",
-      "username": "33",
-      "email": "3@3",
-      "password": "1234"
-    },
-    {
-      "id": "60f7",
-      "username": "peidinho jamiraguaia",
-      "email": "pedro@peidao",
-      "password": "gatotrovao"
-    },
-    {
-      "id": "efc3",
-      "username": "11",
-      "email": "1@1",
-      "password": "1"
-    },
-    {
-      "id": "1e57",
-      "username": "joao",
-      "email": "joaocepac@gmail.com",
-      "password": "fafa"
-    },
-    {
-      "id": "5239",
-      "username": "po",
-      "email": "as@as",
-      "password": "3"
-    },
-    {
-      "id": "dab6",
-      "username": "o",
-      "email": "re@233",
       "password": "1234"
     }
   ]
